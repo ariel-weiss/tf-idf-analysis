@@ -1,5 +1,5 @@
 
-n_words = 200
+n_words = 300
 possible_frequencies = {
 'low_frequency' : {
             'word_count': int(0.005*n_words),

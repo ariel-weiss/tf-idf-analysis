@@ -37,6 +37,7 @@ class TestTFIDF:
             plt.legend()
             plt.grid(axis = 'both')
             plt.xlabel('tf option : idf option')
+            plt.ylabel('tf-idf score')
             plt.ylim([self.min_point, self.max_point])
 
     def __plot_graph_by_rarity(self):
@@ -48,6 +49,7 @@ class TestTFIDF:
         for idx, (rarity, frequency) in enumerate(self.tests_by_rarity):
             if idx < 3:
                 plt.subplot(1,3,1)
+                plt.ylabel('tf-idf score')
             elif 3 <= idx < 6:
                 plt.subplot(1,3,2)
             else:
